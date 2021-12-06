@@ -16,7 +16,7 @@ for card in range(card_num):
         bingo_card = [x for x in bingo_card if x]
         for elem in np.transpose(bingo_card).tolist():
             bingo_card.append(elem)
-
+        print(bingo_card)
 
     called_numbers = []
     result = False
@@ -34,6 +34,8 @@ for card in range(card_num):
                     losing_numbers = called_numbers
                     called_numbers = []
                     count = 0
+                    print(losing_board)
+                    print(called_numbers)
                     break
                 elif result == True and count < losing_count:
                     break
@@ -48,6 +50,7 @@ losing_board = list(np.concatenate(losing_board).flat)
 for elem in losing_numbers:
     if elem in losing_board and elem in losing_numbers:
         board_sum -= int(elem)
+        print(board_sum, elem)
 board_sum = board_sum * int(final_number)
 print(board_sum)    
 

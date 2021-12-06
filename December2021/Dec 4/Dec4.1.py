@@ -15,6 +15,7 @@ for i in range(len(bingo_cards_temp)):
         temp_matrix = np.transpose(temp_matrix).tolist()
         for j in range(len(temp_matrix)):
             bingo_cards.append(temp_matrix[j])
+        print(bingo_cards)
         temp_matrix = []
 
 called_numbers = []
@@ -44,5 +45,8 @@ board_sum = sum(map(int, winning_board))
 for elem in winning_numbers:
     if elem in winning_board and elem in winning_numbers:
         board_sum -= int(elem)
+        print(board_sum, elem)
 board_sum = board_sum * int(winning_numbers[-1])
 print(board_sum)
+
+#22680
