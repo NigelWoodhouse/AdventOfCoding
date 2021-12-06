@@ -1,5 +1,6 @@
 import numpy as np
-import matplotlib as plt
+import matplotlib.pylab as plt
+import seaborn as sns; sns.set()
 
 def load_file(file_name):
     with open(file_name,'r') as infile:
@@ -65,7 +66,12 @@ def counter(grid):
         if flatten[i] > 1:
             count += 1
     print("Number of 2's or greater: ", count)
+    draw(grid)
     # 6461
+def draw(grid):
+    plt.figure(figsize=(12,12))
+    ax = sns.heatmap(grid, cbar=None, xticklabels=False, yticklabels=False)
+    plt.savefig("vents_straight.png", bbox_inches='tight', dpi=1000)
 
 main()
 

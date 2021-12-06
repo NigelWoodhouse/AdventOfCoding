@@ -100,7 +100,7 @@ def counter(grid):
 def draw(grid):
     plt.figure(figsize=(12,12))
     ax = sns.heatmap(grid, cbar=None, xticklabels=False, yticklabels=False)
-    plt.savefig("vents.png", bbox_inches='tight', dpi=1000)
+    plt.savefig("vents_diagonal.png", bbox_inches='tight', dpi=1000)
 main()
 
 
