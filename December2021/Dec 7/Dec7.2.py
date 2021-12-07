@@ -11,6 +11,5 @@ for pos in range(max(crabs)+1):
         master_fuel = pos_fuel
         master_pos = pos
        
-print(int(master_pos))
-print(int(master_fuel))
+print(master_pos, int(master_fuel))
 # 464, 98363777

@@ -10,5 +10,5 @@ med = statistics.median(crabs)
 fuel = 0
 for i in range(len(crabs)):
     fuel += abs(crabs[i]-med)
-print(int(fuel))
-# 347011
+print(med, int(fuel))
+# 311, 347011
