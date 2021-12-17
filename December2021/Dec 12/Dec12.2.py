@@ -3,8 +3,7 @@ import json
 with open('main_problem.json') as json_file:
     graph = json.load(json_file)
 
-# Code modified from https://www.python.org/doc/essays/graphs/
-def find_all_paths(graph, start, end, path=[], revisit=False):
+def find_paths(graph, start, end, path=[], revisit=False):
     path = path + [start]
     if start == end:
         return [path]
@@ -20,11 +19,11 @@ def find_all_paths(graph, start, end, path=[], revisit=False):
 
     for node in graph[start]:
         if node not in path or node == node.upper() or revisit == False:
-            newpaths = find_all_paths(graph, node, end, path, revisit)
+            newpaths = find_paths(graph, node, end, path, revisit)
             for newpath in newpaths:
                 paths.append(newpath)
     return paths
 
-paths = find_all_paths(graph, 'start', 'end')
+paths = find_paths(graph, 'start', 'end')
 print(len(paths))
 # 149220
