@@ -1,0 +1,8 @@
+{
+    "start": ["HN", "dc", "kj"],
+    "kj": ["sa", "HN", "dc"],
+    "sa": ["kj"],
+    "dc": ["end", "HN", "kj", "LN"],
+    "HN": ["dc", "kj", "end"],
+    "LN": ["dc"]
+}

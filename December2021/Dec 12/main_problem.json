@@ -1,0 +1,13 @@
+{
+    "start": ["po","lo","nu"],
+    "bw": ["QF","US","po","ju"],
+    "ne": ["end","XL","lo","nu","QF","ju"],
+    "po": ["ju","bw", "XL"],
+    "ju": ["po","ne","QF","bw","end"],
+    "lo": ["QF","ne","XL","nu"],
+    "nu": ["ne","lo","XL"],
+    "xb": ["XL"],
+    "QF": ["bw","lo","ne","ju"],
+    "XL": ["ne","lo","end","nu","xb","po"],
+    "US": ["bw"]
+}
