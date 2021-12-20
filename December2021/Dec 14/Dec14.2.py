@@ -22,5 +22,5 @@ for count in range(40):
         pairs_counter[key[0]+char] += value # Increase resultant new pair
         pairs_counter[char+key[1]] += value # Increase resultant new pair
         characters[char] += value # Increase the count of the character
-        print(characters[char])
 print(max(characters.values())-min(characters.values()))
+# 3724343376942
