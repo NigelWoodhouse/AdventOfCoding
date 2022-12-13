@@ -41,6 +41,6 @@ for line in file:
             movement(knot_positions[keys[i]], knot_positions[keys[i+1]], keys[i+1])
 
 unique_tail_pos_set = set(tail_pos_set)
-print(unique_tail_pos_set)
+print(unique_tail_pos_set) 
 print(len(unique_tail_pos_set)) 
 # 2717
