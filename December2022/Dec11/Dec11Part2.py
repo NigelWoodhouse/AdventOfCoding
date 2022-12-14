@@ -1,11 +1,12 @@
 from operator import mod
 from math import lcm
 class Monkey(object):
-    def __init__(self, items, operand, operation, divisor):
+    def __init__(self, items, operand, operation, divisor, count = 0):
         self.items = items
         self.operand = operand
         self.operation = operation
         self.divisor = divisor
+        self.count = count
     
     def inspectMultiply(self, item):
         if self.operation != 0:
