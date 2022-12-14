@@ -51,14 +51,14 @@ if __name__ == '__main__':
     Monkey6 = Monkey([89], "+", 6,  2)
     Monkey7 = Monkey([62, 80, 58, 57, 93, 56], "*", 0, 13)
 
-    Monkey0.self_true, Monkey0.self_false, Monkey0.count = Monkey5, Monkey3, 0
-    Monkey1.self_true, Monkey1.self_false, Monkey1.count = Monkey0, Monkey3, 0
-    Monkey2.self_true, Monkey2.self_false, Monkey2.count = Monkey7, Monkey4, 0
-    Monkey3.self_true, Monkey3.self_false, Monkey3.count = Monkey5, Monkey2, 0
-    Monkey4.self_true, Monkey4.self_false, Monkey4.count = Monkey1, Monkey6, 0
-    Monkey5.self_true, Monkey5.self_false, Monkey5.count = Monkey2, Monkey7, 0
-    Monkey6.self_true, Monkey6.self_false, Monkey6.count = Monkey0, Monkey1, 0
-    Monkey7.self_true, Monkey7.self_false, Monkey7.count = Monkey6, Monkey4, 0
+    Monkey0.self_true, Monkey0.self_false, = Monkey5, Monkey3
+    Monkey1.self_true, Monkey1.self_false, = Monkey0, Monkey3
+    Monkey2.self_true, Monkey2.self_false, = Monkey7, Monkey4
+    Monkey3.self_true, Monkey3.self_false, = Monkey5, Monkey2
+    Monkey4.self_true, Monkey4.self_false, = Monkey1, Monkey6
+    Monkey5.self_true, Monkey5.self_false, = Monkey2, Monkey7
+    Monkey6.self_true, Monkey6.self_false, = Monkey0, Monkey1
+    Monkey7.self_true, Monkey7.self_false, = Monkey6, Monkey4
 
     monkeys = [Monkey0, Monkey1, Monkey2, Monkey3, Monkey4, Monkey5, Monkey6, Monkey7]
 
