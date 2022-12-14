@@ -62,7 +62,6 @@ if __name__ == '__main__':
     monkeys = [Monkey0, Monkey1, Monkey2, Monkey3, Monkey4, Monkey5, Monkey6, Monkey7]
 
     passes = []
-    # one cycle
     for i in range(1,21):
         for monkey in monkeys:
             for item in range(len(monkey.items)):
