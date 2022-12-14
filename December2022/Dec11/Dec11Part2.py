@@ -6,12 +6,6 @@ class Monkey(object):
         self.operand = operand
         self.operation = operation
         self.divisor = divisor
-
-    def removeitem(self, item):
-        self.items.remove(item)
-
-    def additem(self, item):
-        self.items.append(item)
     
     def inspectMultiply(self, item):
         if self.operation != 0:
@@ -33,8 +27,6 @@ class Monkey(object):
         else:
             monkey_pass_false.items.append(item)
         
-        
-
 if __name__ == '__main__':
     # Hardcoded test input
     # Monkey0 = Monkey([79, 98], "*", 19, 23)
